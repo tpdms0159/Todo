@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mariadb://${{ secrets.DB_ENDPOINT}}:3306/todo
-    username: ${{ secrets.DB_USERNAME }}
-    password: ${{ secrets.DB_PASSWORD }}
+    url: jdbc:mariadb://${DB_ENDPOINT}:3306/todo
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
